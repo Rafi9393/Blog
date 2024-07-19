@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeedesk Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>That's the name of the blog!</h1>
+        </div>
+    </section>
+    <div class="divider"></div>
+
+    <main class="mb-5">
+        <!-- Sekcja dodawania posta -->
+        <div class="container mt-4">
+            <h2>Dodaj nowy post</h2>
+            <form id="postForm" class="add-comment-form">
+                <div class="form-group">
+                    <label for="title">Tytuł:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Treść:</label>
+                    <textarea id="content" name="content" rows="8" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Zdjęcie (URL):</label>
+                    <input type="url" id="image" name="image">
+                </div>
+                <div class="form-group">
+                    <div class="button-group d-flex justify-content-between">
+                        <button type="submit" class="btn btn-custom">Zapisz Post</button>
+                        <button type="button" class="btn btn-custom">Podgląd</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Lista postów -->
+        <div class="container mt-4">
+            <h2>Lista Postów</h2>
+                <div class="post-list">
+                    <h3 class="post-title">Tytuł Posta 2</h3>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-sm">Podgląd</button>
+                        <button class="btn btn-sm">Edycja</button>
+                        <button class="btn btn-sm btn-remove">Usuń</button>
+                    </div>
+                </div>
+                <div class="post-list">
+                    <h3 class="post-title">Tytuł Posta 2</h3>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-sm">Podgląd</button>
+                        <button class="btn btn-sm">Edycja</button>
+                        <button class="btn btn-sm btn-remove">Usuń</button>
+                    </div>
+                </div>
+                <!-- Dodaj więcej postów według potrzeby -->
+            </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Coffeedesk. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

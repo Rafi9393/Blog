@@ -43,6 +43,69 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Dodajemy odstęp między przyciskami */
+}
+
+.btn-custom {
+    padding: 10px 20px;
+    background-color: #444;
+    color: #e1e1e1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    /* Dodajemy elastyczność dla przycisków */
+    max-width: 200px;
+    /* Ustawiamy maksymalną szerokość przycisków */
+}
+
+.btn-custom:hover {
+    background-color: #555;
+}
+
+
+.post-list {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-list .btn {
+    margin-left: 10px;
+    background-color: #444;
+    color: #e1e1e1;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-list .btn:hover {
+    background-color: #555;
+}
+
+.post-list .d-flex {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10%;
+    /* Dodane odstępy między przyciskami */
+}
+
+button.btn-remove {
+    color: red !important;
+}
+
 .post-img {
     width: 60%;
     height: auto;
